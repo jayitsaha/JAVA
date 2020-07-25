@@ -52,6 +52,7 @@ public class ArrayManipulation {
             
             sum+=inputArray[i];
             max = Math.max(max, sum);
+            
              
             
         }
@@ -75,6 +76,7 @@ public class ArrayManipulation {
 		long max = ArrayManipulation(n, queries);
 		System.out.println(max);
 		sc.close();
+                
 	}
     
 }
