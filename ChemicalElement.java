@@ -5,6 +5,8 @@
  */
 package hackerrank;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Jayit
@@ -43,7 +45,7 @@ public class ChemicalElement implements Comparable {
         }
         
         /**
-         * Creates a new chemical eleent with given symbolic name,
+         * Creates a new chemical element with given symbolic name,
          * atomic number (number of protons), and electronegativity.
         */
         public ChemicalElement(String symbol, int atomicNumber,
@@ -143,6 +145,46 @@ public class ChemicalElement implements Comparable {
                 return 1;
             }
         }
+        
+        public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+                System.out.println("ENTER SYMBOL OF ELEM1");
+                String symbol1 = sc.next();
+                 System.out.println("ENTER ATOMIC NO OF ELEM1");
+               
+                int atomicNumber1 = sc.nextInt();
+                System.out.println("ENTER EN OF ELEM1");
+
+                double EN1 = sc.nextDouble();
+                
+                
+                System.out.println("ENTER SYMBOL OF ELEM2");
+                String symbol2 = sc.next();
+                System.out.println("ENTER ATOMIC NO OF ELEM2");
+
+                int atomicNumber2 = sc.nextInt();
+                System.out.println("ENTER EN OF ELEM2");
+                
+                double EN2 = sc.nextDouble();
+                ChemicalElement elem1 = new ChemicalElement(symbol1,atomicNumber1,EN1);
+                ChemicalElement elem2 = new ChemicalElement(symbol2,atomicNumber2,EN2);
+                
+                
+                int getAt1 = elem1.getAtomicNumber();
+                int getAt2 = elem2.getAtomicNumber();
+                
+                System.out.println("ATOMIC NO. OF ELEM1");
+                System.out.println(getAt1);
+                System.out.println("ATOMIC NO. OF ELEM2");
+                System.out.println(getAt2);
+
+                
+                
+
+
+                
+		sc.close();
+	}
     
         
      
