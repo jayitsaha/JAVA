@@ -14,7 +14,11 @@ import java.util.Scanner;
  */
 public class MinimumDistances {
     
-    
+//    Create  a hash map with key as the value in the particular position of the array
+//    Value of the particular key will be th index
+//    if the index already exists, then we update the table with the current index
+//    the minimum dist is calc by seeing whether the minDist US SMALLER OR THE DIFFERENCE BETWEEN THE 
+//    PREVINDEX AND THE CURRENT INDEX OF THE PARTICUALAR ELEMENT. update THE min  
     static int minimumDistances(int[] a){
         
         HashMap<Integer,Integer> hmap = new HashMap<>();
