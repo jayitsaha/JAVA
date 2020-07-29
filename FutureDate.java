@@ -30,10 +30,10 @@ public static void main(String args[])throws IOException
         int y=Integer.parseInt(date.substring(q+1));
         System.out.println("Entered Date: "+date);
  
-        if((y%400==0) || ((y%100!=0)&&(y%4==0))) // Checking for leap year
+        if((y%400==0) || ((y%100!=0)&&(y%4==0))) 
         month[2]=29;
  
-        if(m<0 || m>12 || d<0 || d>month[m] || y<0 || y>9999) // Performing Date Validation
+        if(m<0 || m>12 || d<0 || d>month[m] || y<0 || y>9999) 
         {
             System.out.println("Invalid Date");
         }
@@ -46,8 +46,7 @@ public static void main(String args[])throws IOException
                 d++;
                 count++;
                  
-                /* If day exceeds the maximum days of a month then day should start from 1
-                   and month should increase */
+                
  
                 if(d>month[m])
                 {
@@ -55,8 +54,7 @@ public static void main(String args[])throws IOException
                     m++;
                 }
                  
-                /* If month exceeds 12 then month should start from 1
-                   and year should increase */
+                
                 if(m>12)
                 {
                     m=1;

@@ -2,7 +2,10 @@
 package hackerrank;
 
 
-        
+ /**
+ *
+ * @author Jayit
+ */       
 import java.util.Scanner;
 class Angle
 {
