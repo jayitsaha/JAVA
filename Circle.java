@@ -17,7 +17,7 @@ public class Circle {
     
     Circle(double radius){
         
-        this.radius = radius;
+        Circle.radius = radius;
         
     }
     
