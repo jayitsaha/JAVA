@@ -40,19 +40,19 @@ public class HackerRank {
         
         return count;
     }
-//    public static void main(String[] args) {
-//        // TODO code application logic here
-//        
-//        Scanner sc = new Scanner(System.in);
-//        int n = sc.nextInt();
-//        int c[] = new int[n];
-//        for(int i=0;i<n;i++){
-//            c[i] = sc.nextInt();
-//        }
-//        
-//        int ans = jumpingOnClouds(c);
-//	System.out.println(ans);
-//	sc.close();
-//    }
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int c[] = new int[n];
+        for(int i=0;i<n;i++){
+            c[i] = sc.nextInt();
+        }
+        
+        int ans = jumpingOnClouds(c);
+	System.out.println(ans);
+	sc.close();
+    }
     
 }
