@@ -39,9 +39,9 @@ public class Circle {
     {   
       Scanner s = new Scanner(System.in);
       System.out.println("Enter the radius:");
-      double radius= s.nextDouble();
+      double rad= s.nextDouble();
 
-        Circle c1 = new Circle(radius);
+        Circle c1 = new Circle(rad);
       
         System.out.println("RADIUS: "+c1.getdata());
         System.out.println("AREA: "+c1.area());
